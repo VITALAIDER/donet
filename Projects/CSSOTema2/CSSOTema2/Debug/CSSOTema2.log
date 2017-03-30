@@ -1,0 +1,11 @@
+﻿  CSSOTema2.cpp
+c:\users\sava\documents\visual studio 2015\projects\cssotema2\cssotema2\cssotema2.cpp(31): warning C4273: 'CreateFileMappingA': inconsistent dll linkage
+  c:\program files (x86)\windows kits\8.1\include\um\winbase.h(3116): note: see previous definition of 'CreateFileMappingA'
+c:\users\sava\documents\visual studio 2015\projects\cssotema2\cssotema2\cssotema2.cpp(39): warning C4273: 'MapViewOfFile': inconsistent dll linkage
+  c:\program files (x86)\windows kits\8.1\include\um\memoryapi.h(276): note: see previous definition of 'MapViewOfFile'
+c:\users\sava\documents\visual studio 2015\projects\cssotema2\cssotema2\cssotema2.cpp(53): warning C4101: 'hProcess': unreferenced local variable
+c:\users\sava\documents\visual studio 2015\projects\cssotema2\cssotema2\cssotema2.cpp(107): warning C4101: 'hf': unreferenced local variable
+c:\users\sava\documents\visual studio 2015\projects\cssotema2\cssotema2\cssotema2.cpp(107): warning C4101: 'wf': unreferenced local variable
+c:\users\sava\documents\visual studio 2015\projects\cssotema2\cssotema2\cssotema2.cpp(136): warning C4101: 'x': unreferenced local variable
+  CSSOTema2.vcxproj -> C:\Users\sava\documents\visual studio 2015\Projects\CSSOTema2\Debug\CSSOTema2.exe
+  CSSOTema2.vcxproj -> C:\Users\sava\documents\visual studio 2015\Projects\CSSOTema2\Debug\CSSOTema2.pdb (Full PDB)

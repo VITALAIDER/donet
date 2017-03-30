@@ -1,0 +1,4 @@
+﻿  CssoTema3.cpp
+c:\users\sava\documents\visual studio 2015\projects\cssotema3\cssotema3\cssotema3.cpp(21): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  CssoTema3.vcxproj -> C:\Users\sava\documents\visual studio 2015\Projects\CssoTema3\Debug\CssoTema3.exe
+  CssoTema3.vcxproj -> C:\Users\sava\documents\visual studio 2015\Projects\CssoTema3\Debug\CssoTema3.pdb (Full PDB)

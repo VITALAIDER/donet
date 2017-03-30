@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container">
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Company)">
+        <MappingFragment StoreEntitySet="Companies">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cars">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Car)">
+        <MappingFragment StoreEntitySet="Cars">
+          <ScalarProperty Name="CarId" ColumnName="CarId" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="CompanyCompanyId" ColumnName="CompanyCompanyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.User)">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="CompanyCompanyId" ColumnName="CompanyCompanyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompanyContacts">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.CompanyContact)">
+        <MappingFragment StoreEntitySet="CompanyContacts">
+          <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="CompanyCompanyContact" TypeName="Model1.CompanyCompanyContact" StoreEntitySet="Companies">
+      <EndProperty Name="CompanyContact">
+        <ScalarProperty Name="ContactId" ColumnName="CompanyContact_ContactId" />
+      </EndProperty>
+      <EndProperty Name="Company">
+        <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="CarUser" TypeName="Model1.CarUser" StoreEntitySet="CarUser">
+      <EndProperty Name="Car">
+        <ScalarProperty Name="CarId" ColumnName="Cars_CarId" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="UserId" ColumnName="Users_UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

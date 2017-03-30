@@ -1,0 +1,4 @@
+﻿  CSSO.Tema1.cpp
+c:\users\sava\documents\visual studio 2015\projects\csso.tema1\csso.tema1\csso.tema1.cpp(102): warning C4244: 'argument': conversion from 'LONGLONG' to 'DWORD', possible loss of data
+  CSSO.Tema1.vcxproj -> C:\Users\sava\documents\visual studio 2015\Projects\CSSO.Tema1\Debug\CSSO.Tema1.exe
+  CSSO.Tema1.vcxproj -> C:\Users\sava\documents\visual studio 2015\Projects\CSSO.Tema1\Debug\CSSO.Tema1.pdb (Full PDB)

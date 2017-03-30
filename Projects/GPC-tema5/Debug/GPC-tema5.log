@@ -1,0 +1,7 @@
+﻿  t5p3.cpp
+c:\users\sava\documents\visual studio 2015\projects\gpc-tema5\t5p3.cpp(577): warning C4101: 'zb': unreferenced local variable
+c:\users\sava\documents\visual studio 2015\projects\gpc-tema5\t5p3.cpp(577): warning C4101: 'za': unreferenced local variable
+c:\users\sava\documents\visual studio 2015\projects\gpc-tema5\t5p3.cpp(577): warning C4101: 'a': unreferenced local variable
+c:\users\sava\documents\visual studio 2015\projects\gpc-tema5\t5p3.cpp(577): warning C4101: 'b': unreferenced local variable
+  GPC-tema5.vcxproj -> c:\users\sava\documents\visual studio 2015\Projects\GPC-tema5\Debug\GPC-tema5.exe
+  GPC-tema5.vcxproj -> c:\users\sava\documents\visual studio 2015\Projects\GPC-tema5\Debug\GPC-tema5.pdb (Full PDB)

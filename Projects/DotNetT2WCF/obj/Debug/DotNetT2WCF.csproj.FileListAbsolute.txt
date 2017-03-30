@@ -1,0 +1,8 @@
+c:\users\sava\documents\visual studio 2015\Projects\DotNetT2WCF\bin\DotNetT2WCF.dll.config
+c:\users\sava\documents\visual studio 2015\Projects\DotNetT2WCF\bin\DotNetT2WCF.dll
+c:\users\sava\documents\visual studio 2015\Projects\DotNetT2WCF\bin\DotNetT2WCF.pdb
+c:\users\sava\documents\visual studio 2015\Projects\DotNetT2WCF\obj\Debug\DotNetT2WCF.csprojResolveAssemblyReference.cache
+c:\users\sava\documents\visual studio 2015\Projects\DotNetT2WCF\obj\Debug\DotNetT2WCF.dll
+c:\users\sava\documents\visual studio 2015\Projects\DotNetT2WCF\obj\Debug\DotNetT2WCF.pdb
+C:\Users\sava\documents\visual studio 2015\Projects\DotNetT2WCF\bin\DotNetTema.exe
+C:\Users\sava\documents\visual studio 2015\Projects\DotNetT2WCF\bin\DotNetTema.pdb

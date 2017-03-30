@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:32769/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:32769/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_SayHello_InputMessage">
+    <wsdl:part name="parameters" element="tns:SayHello" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SayHello_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SayHelloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DisplayAllCars_InputMessage">
+    <wsdl:part name="parameters" element="tns:DisplayAllCars" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DisplayAllCars_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DisplayAllCarsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PrintMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrintMenu" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PrintMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrintMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DisplayAllCarsCompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:DisplayAllCarsCompany" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DisplayAllCarsCompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DisplayAllCarsCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCompanyContacts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyContacts" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCompanyContacts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyContactsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DisplayAllCompanyCarsByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:DisplayAllCompanyCarsByName" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DisplayAllCompanyCarsByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DisplayAllCompanyCarsByNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="SayHello">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SayHello" message="tns:IService1_SayHello_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SayHelloResponse" message="tns:IService1_SayHello_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllCars">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DisplayAllCars" message="tns:IService1_DisplayAllCars_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DisplayAllCarsResponse" message="tns:IService1_DisplayAllCars_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintMenu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PrintMenu" message="tns:IService1_PrintMenu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PrintMenuResponse" message="tns:IService1_PrintMenu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllCarsCompany">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DisplayAllCarsCompany" message="tns:IService1_DisplayAllCarsCompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DisplayAllCarsCompanyResponse" message="tns:IService1_DisplayAllCarsCompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyContacts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCompanyContacts" message="tns:IService1_GetCompanyContacts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCompanyContactsResponse" message="tns:IService1_GetCompanyContacts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllCompanyCarsByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DisplayAllCompanyCarsByName" message="tns:IService1_DisplayAllCompanyCarsByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DisplayAllCompanyCarsByNameResponse" message="tns:IService1_DisplayAllCompanyCarsByName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SayHello">
+      <soap:operation soapAction="http://tempuri.org/IService1/SayHello" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllCars">
+      <soap:operation soapAction="http://tempuri.org/IService1/DisplayAllCars" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintMenu">
+      <soap:operation soapAction="http://tempuri.org/IService1/PrintMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllCarsCompany">
+      <soap:operation soapAction="http://tempuri.org/IService1/DisplayAllCarsCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyContacts">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCompanyContacts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayAllCompanyCarsByName">
+      <soap:operation soapAction="http://tempuri.org/IService1/DisplayAllCompanyCarsByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:32769/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

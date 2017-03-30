@@ -1,0 +1,10 @@
+c:\users\sava\documents\visual studio 2015\Projects\DotNetTema\bin\Debug\DotNetTema.exe.config
+c:\users\sava\documents\visual studio 2015\Projects\DotNetTema\bin\Debug\DotNetTema.exe
+c:\users\sava\documents\visual studio 2015\Projects\DotNetTema\bin\Debug\DotNetTema.pdb
+c:\users\sava\documents\visual studio 2015\Projects\DotNetTema\bin\Debug\EntityFramework.dll
+c:\users\sava\documents\visual studio 2015\Projects\DotNetTema\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\sava\documents\visual studio 2015\Projects\DotNetTema\bin\Debug\EntityFramework.xml
+c:\users\sava\documents\visual studio 2015\Projects\DotNetTema\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\sava\documents\visual studio 2015\Projects\DotNetTema\obj\Debug\DotNetTema.exe
+c:\users\sava\documents\visual studio 2015\Projects\DotNetTema\obj\Debug\DotNetTema.pdb
+C:\Users\sava\Documents\Visual Studio 2015\Projects\DotNetTema\obj\Debug\DotNetTema.csprojResolveAssemblyReference.cache

@@ -1,0 +1,11 @@
+C:\Users\sava\documents\visual studio 2015\Projects\UsingWCFaplication\bin\Debug\UsingWCFaplication.exe.config
+C:\Users\sava\documents\visual studio 2015\Projects\UsingWCFaplication\bin\Debug\UsingWCFaplication.exe
+C:\Users\sava\documents\visual studio 2015\Projects\UsingWCFaplication\bin\Debug\UsingWCFaplication.pdb
+C:\Users\sava\documents\visual studio 2015\Projects\UsingWCFaplication\bin\Debug\DotNetT2WCF.dll
+C:\Users\sava\documents\visual studio 2015\Projects\UsingWCFaplication\bin\Debug\DotNetT2WCF.pdb
+C:\Users\sava\documents\visual studio 2015\Projects\UsingWCFaplication\obj\Debug\UsingWCFaplication.csprojResolveAssemblyReference.cache
+C:\Users\sava\documents\visual studio 2015\Projects\UsingWCFaplication\obj\Debug\UsingWCFaplication.exe
+C:\Users\sava\documents\visual studio 2015\Projects\UsingWCFaplication\obj\Debug\UsingWCFaplication.pdb
+C:\Users\sava\documents\visual studio 2015\Projects\UsingWCFaplication\bin\Debug\EntityFramework.dll
+C:\Users\sava\Documents\Visual Studio 2015\Projects\UsingWCFaplication\bin\Debug\DotNetTema.exe
+C:\Users\sava\Documents\Visual Studio 2015\Projects\UsingWCFaplication\bin\Debug\DotNetTema.pdb

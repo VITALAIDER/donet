@@ -1,0 +1,5 @@
+c:\users\sava\documents\visual studio 2015\Projects\Arcasa\bin\Debug\Arcasa.exe.config
+c:\users\sava\documents\visual studio 2015\Projects\Arcasa\bin\Debug\Arcasa.exe
+c:\users\sava\documents\visual studio 2015\Projects\Arcasa\bin\Debug\Arcasa.pdb
+c:\users\sava\documents\visual studio 2015\Projects\Arcasa\obj\Debug\Arcasa.exe
+c:\users\sava\documents\visual studio 2015\Projects\Arcasa\obj\Debug\Arcasa.pdb

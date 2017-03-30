@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Model1StoreContainer">
+    <EntitySet Name="Companies" EntityType="Model1.Store.Companies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cars" EntityType="Model1.Store.Cars" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="Model1.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CompanyContacts" EntityType="Model1.Store.CompanyContacts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CarUser" EntityType="Model1.Store.CarUser" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="CompanyCar" Association="Model1.Store.CompanyCar">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="Car" EntitySet="Cars" />
+    </AssociationSet>
+    <AssociationSet Name="CompanyCompanyContact" Association="Model1.Store.CompanyCompanyContact">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="CompanyContact" EntitySet="CompanyContacts" />
+    </AssociationSet>
+    <AssociationSet Name="CompanyUser" Association="Model1.Store.CompanyUser">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CarUser_Car" Association="Model1.Store.FK_CarUser_Car">
+      <End Role="Car" EntitySet="Cars" />
+      <End Role="CarUser" EntitySet="CarUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CarUser_User" Association="Model1.Store.FK_CarUser_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="CarUser" EntitySet="CarUser" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Companies">
+    <Key>
+      <PropertyRef Name="CompanyId" />
+    </Key>
+    <Property Name="CompanyId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyContact_ContactId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cars">
+    <Key>
+      <PropertyRef Name="CarId" />
+    </Key>
+    <Property Name="CarId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BrandName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ModelName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyCompanyId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyCompanyId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CompanyContacts">
+    <Key>
+      <PropertyRef Name="ContactId" />
+    </Key>
+    <Property Name="ContactId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adress" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CarUser">
+    <Key>
+      <PropertyRef Name="Cars_CarId" />
+      <PropertyRef Name="Users_UserId" />
+    </Key>
+    <Property Name="Cars_CarId" Type="int" Nullable="false" />
+    <Property Name="Users_UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="CompanyCar">
+    <End Role="Company" Type="Model1.Store.Companies" Multiplicity="1" />
+    <End Role="Car" Type="Model1.Store.Cars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="Car">
+        <PropertyRef Name="CompanyCompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CompanyCompanyContact">
+    <End Role="Company" Type="Model1.Store.Companies" Multiplicity="*" />
+    <End Role="CompanyContact" Type="Model1.Store.CompanyContacts" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyContact">
+        <PropertyRef Name="ContactId" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="CompanyContact_ContactId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CompanyUser">
+    <End Role="Company" Type="Model1.Store.Companies" Multiplicity="1" />
+    <End Role="User" Type="Model1.Store.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="CompanyCompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CarUser_Car">
+    <End Role="Car" Type="Model1.Store.Cars" Multiplicity="1" />
+    <End Role="CarUser" Type="Model1.Store.CarUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Car">
+        <PropertyRef Name="CarId" />
+      </Principal>
+      <Dependent Role="CarUser">
+        <PropertyRef Name="Cars_CarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CarUser_User">
+    <End Role="CarUser" Type="Model1.Store.CarUser" Multiplicity="*" />
+    <End Role="User" Type="Model1.Store.Users" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="CarUser">
+        <PropertyRef Name="Users_UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
